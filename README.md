@@ -1,4 +1,10 @@
 
+
+<p align="center">
+  <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/0bb0a498-9d0a-420d-bd21-c905e4313240" />
+</p>
+
+
 # AutoTrade Engine
 
 A modular algorithmic trading engine supporting **Long/Short**, **Stop‑Loss / Take‑Profit**, **ATR‑based dynamic risk**, **cooldown logic**, and **multi‑indicator strategy fusion**. Designed for both **backtesting** and **paper trading** with CCXT.
@@ -85,22 +91,12 @@ This project is **not** open‑source. Only the owner may use, modify, or distri
 
 For questions, collaboration, or private enhancements:
 
-**Email:** your‑[email@example.com](mailto:email@example.com)
+Developer: Majid Askary
+
+Email: m.askary84@yahoo.com
+
+LinkedIn: https://www.linkedin.com/in/majidaskary
 
 ---
 
-## 🖼 Header Image
 
-Place your desired project image at:
-
-```
-./assets/header.jpg
-```
-
-And reference it at the top of README:
-
-```markdown
-<p align="center">
-  <img src="assets/header.jpg" width="720" />
-</p>
-```
