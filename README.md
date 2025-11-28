@@ -1,9 +1,3 @@
-
-
-<p align="center">
-  <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/0bb0a498-9d0a-420d-bd21-c905e4313240" />
-</p>
-
 # AutoTrade Core — Public Overview
 
 AutoTrade Core is a high-level, modular, and research-oriented framework designed for **strategy development, backtesting, and AI-assisted trading experimentation**.  
