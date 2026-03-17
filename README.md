@@ -86,11 +86,11 @@ The MVP includes:
 These components form the technical foundation of the entire system.
  
 MVP Phase in the Roadmap
-```
-text Phase 1 — Core Infrastructure (MVP) ██████████░░░░░░░░░░░░░░░░░░░░
-Phase 2 — Market Intelligence ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-Phase 3 — Strategy Infrastructure ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-Phase 4 — Execution Systems ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 
+```text
+Phase 1 — Core Infrastructure (MVP) ██████████░░░░░░░░░░░░░░░░░░░░
+Phase 2 — Market Intelligence       ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+Phase 3 — Strategy Infrastructure   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+Phase 4 — Execution Systems         ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 
 ```
 
 Currently, roughly 25% of the MVP infrastructure has been implemented.
