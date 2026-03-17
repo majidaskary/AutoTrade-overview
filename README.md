@@ -49,60 +49,60 @@ within a single coherent architecture.
 
 flowchart TB
 
-subgraph Sources["Market Data Sources"]
-A[Exchange APIs]
-B[WebSocket Streams]
-C[Historical Datasets]
-end
-
-subgraph DataLayer["Deterministic Data Layer"]
-D[Data Ingestion]
-E[Event Validation]
-F[Duplicate Detection]
-G[Deterministic Ordering]
-end
-
-subgraph FeatureEngine["Feature & Indicator Engine"]
-H[Feature Engine]
-I[Indicator Kernels]
-J[Multi-Timeframe Features]
-end
-
-subgraph Context["Market Context Layer"]
-K[Market Context Builder]
-end
-
-subgraph Strategy["Strategy Layer"]
-L[Strategy Engine]
-M[Backtesting / Replay]
-end
-
-subgraph Execution["Execution Infrastructure"]
-N[Execution Engine]
-O[Risk Controls]
-P[Portfolio Tracking]
-end
-
-A --> D
-B --> D
-C --> D
-
-D --> E
-E --> F
-F --> G
-
-G --> H
-H --> I
-I --> J
-
-J --> K
-K --> L
-
-L --> M
-L --> N
-
-N --> O
-O --> P
+    subgraph Sources["Market Data Sources"]
+    A[Exchange APIs]
+    B[WebSocket Streams]
+    C[Historical Datasets]
+    end
+    
+    subgraph DataLayer["Deterministic Data Layer"]
+    D[Data Ingestion]
+    E[Event Validation]
+    F[Duplicate Detection]
+    G[Deterministic Ordering]
+    end
+    
+    subgraph FeatureEngine["Feature & Indicator Engine"]
+    H[Feature Engine]
+    I[Indicator Kernels]
+    J[Multi-Timeframe Features]
+    end
+    
+    subgraph Context["Market Context Layer"]
+    K[Market Context Builder]
+    end
+    
+    subgraph Strategy["Strategy Layer"]
+    L[Strategy Engine]
+    M[Backtesting / Replay]
+    end
+    
+    subgraph Execution["Execution Infrastructure"]
+    N[Execution Engine]
+    O[Risk Controls]
+    P[Portfolio Tracking]
+    end
+    
+    A --> D
+    B --> D
+    C --> D
+    
+    D --> E
+    E --> F
+    F --> G
+    
+    G --> H
+    H --> I
+    I --> J
+    
+    J --> K
+    K --> L
+    
+    L --> M
+    L --> N
+    
+    N --> O
+    O --> P
 
 
 ---
@@ -123,31 +123,31 @@ Indicators and transformations are computed inside a dedicated feature engine, e
 
 # System Component Map
 
-Market Data System
- ├── Live streaming pipeline
- ├── Data integrity validation
- └── Deterministic ingestion
-
-Feature Infrastructure
- ├── Feature computation engine
- ├── Indicator kernels
- ├── Multi-timeframe features
- └── Feature registry
-
-Replay Infrastructure
- ├── Historical replay engine
- ├── Deterministic simulation
- └── Regression testing
-
-Strategy Layer (future)
- ├── Strategy runtime
- ├── Decision framework
- └── Research experimentation tools
-
-Execution Layer (future)
- ├── Order management
- ├── Risk controls
- └── Portfolio tracking
+    Market Data System
+     ├── Live streaming pipeline
+     ├── Data integrity validation
+     └── Deterministic ingestion
+    
+    Feature Infrastructure
+     ├── Feature computation engine
+     ├── Indicator kernels
+     ├── Multi-timeframe features
+     └── Feature registry
+    
+    Replay Infrastructure
+     ├── Historical replay engine
+     ├── Deterministic simulation
+     └── Regression testing
+    
+    Strategy Layer (future)
+     ├── Strategy runtime
+     ├── Decision framework
+     └── Research experimentation tools
+    
+    Execution Layer (future)
+     ├── Order management
+     ├── Risk controls
+     └── Portfolio tracking
 
 
 ---
@@ -191,17 +191,13 @@ These components form the technical foundation of the platform.
 
 # Roadmap
 
-Phase 1 — Core Infrastructure (MVP)
-██████████░░░░░░░░░░░░░░░░░░░░
+Phase 1 — Core Infrastructure (MVP)   ██████████░░░░░░░░░░░░░░░░░░░░
 
-Phase 2 — Market Intelligence
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+Phase 2 — Market Intelligence         ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
-Phase 3 — Strategy Infrastructure
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+Phase 3 — Strategy Infrastructure     ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
-Phase 4 — Execution Systems
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+Phase 4 — Execution Systems           ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 
 ---
@@ -366,10 +362,12 @@ AI Engineer & System Architect focused on:
     •	AI-assisted engineering workflows
 
 
-LinkedIn
+### LinkedIn
+
 https://www.linkedin.com/in/majidaskary
 
-Contact
+### Contact
+
 m.askary84@yahoo.com
 
 
