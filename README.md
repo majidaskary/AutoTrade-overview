@@ -1,6 +1,6 @@
 
 
-AutoTrade — Deterministic Algorithmic Trading Infrastructure
+# AutoTrade — Deterministic Algorithmic Trading Infrastructure
 
     
 
@@ -8,17 +8,12 @@ AutoTrade is a long-term engineering project focused on building a deterministic
 
 Instead of building a simple trading bot, the goal is to design a robust modular platform capable of supporting:
 
-deterministic market data pipelines
-
-historical replay systems
-
-feature & indicator computation
-
-strategy experimentation
-
-backtesting infrastructure
-
-automated execution systems
+    •	deterministic market data pipelines
+    •	historical replay systems
+    •	feature & indicator computation
+    •	strategy experimentation
+    •	backtesting infrastructure
+    •	automated execution systems
 
 
 The core implementation is currently private while development continues.
@@ -28,33 +23,29 @@ This repository provides a high-level overview of the architecture and engineeri
 
 ---
 
-Project Vision
+# Project Vision
 
 Many algorithmic trading systems evolve into collections of scripts and loosely connected indicators.
 
 AutoTrade explores a different approach:
 
-> Build a clean, deterministic trading infrastructure from the ground up.
+    > Build a clean, deterministic trading infrastructure from the ground up.
 
 
 
 The long-term goal is a system capable of supporting:
 
-research-grade strategy development
-
-reproducible experiments
-
-scalable trading infrastructure
-
-automated trading systems
-
+    •	research-grade strategy development
+    •	reproducible experiments
+    •	scalable trading infrastructure
+    •	automated trading systems
 
 within a single coherent architecture.
 
 
 ---
 
-Conceptual System Architecture
+# Conceptual System Architecture
 
 flowchart TB
 
@@ -116,25 +107,21 @@ O --> P
 
 ---
 
-Key Architectural Principle
+# Key Architectural Principle
 
 Strategies operate on features — not raw market data.
 
 Indicators and transformations are computed inside a dedicated feature engine, ensuring:
 
-reproducibility
-
-deterministic behavior
-
-cleaner strategy code
-
-architectural separation of concerns
-
+    •	reproducibility
+    •	deterministic behavior
+    •	cleaner strategy code
+    •	architectural separation of concerns
 
 
 ---
 
-System Component Map
+# System Component Map
 
 Market Data System
  ├── Live streaming pipeline
@@ -165,13 +152,13 @@ Execution Layer (future)
 
 ---
 
-Development Progress
+# Development Progress
 
 The project is currently under active development.
 
 The focus of the current stage is building core infrastructure before strategy logic.
 
-Estimated Completion
+## Estimated Completion
 
 ≈ 25% of the core infrastructure phase is complete.
 
@@ -182,7 +169,7 @@ This percentage refers only to the infrastructure MVP, not the full long-term sy
 
 ---
 
-MVP Scope
+# MVP Scope
 
 The Minimum Viable Platform (MVP) corresponds to:
 
@@ -190,15 +177,11 @@ Phase 1 — Core Infrastructure
 
 The MVP includes the foundational components required for deterministic trading research:
 
-deterministic market data ingestion
-
-live streaming pipeline
-
-historical replay infrastructure
-
-feature & indicator computation engine
-
-feature-driven strategy interface
+    •	deterministic market data ingestion
+    •	live streaming pipeline
+    •	historical replay infrastructure
+    •	feature & indicator computation engine
+    •	feature-driven strategy interface
 
 
 These components form the technical foundation of the platform.
@@ -206,7 +189,7 @@ These components form the technical foundation of the platform.
 
 ---
 
-Roadmap
+# Roadmap
 
 Phase 1 — Core Infrastructure (MVP)
 ██████████░░░░░░░░░░░░░░░░░░░░
@@ -223,17 +206,14 @@ Phase 4 — Execution Systems
 
 ---
 
-What Remains for the MVP
+# What Remains for the MVP
 
 Remaining work includes:
 
-feature engine expansion
-
-strategy runtime infrastructure
-
-deterministic backtesting framework
-
-market context aggregation
+    •	feature engine expansion
+    •	strategy runtime infrastructure
+    •	deterministic backtesting framework
+    •	market context aggregation
 
 
 Once completed, the system will provide a fully functional research-grade trading infrastructure.
@@ -241,17 +221,14 @@ Once completed, the system will provide a fully functional research-grade tradin
 
 ---
 
-Beyond the MVP
+# Beyond the MVP
 
 Later phases will introduce:
 
-advanced market intelligence
-
-multi-timeframe analysis
-
-automated strategy experimentation
-
-execution and portfolio systems
+    •	feature engine expansion
+    •	strategy runtime infrastructure
+    •	deterministic backtesting framework
+    •	market context aggregation
 
 
 These stages represent capability expansion, not foundational infrastructure.
@@ -259,7 +236,7 @@ These stages represent capability expansion, not foundational infrastructure.
 
 ---
 
-Codebase Metrics
+# Codebase Metrics
 
 Approximate statistics generated with cloc:
 
@@ -276,7 +253,7 @@ JSON	16	785
 PowerShell	3	204
 
 
-Python Code Share
+## Python Code Share
 
 ≈ 36,700 lines of Python
 
@@ -284,129 +261,109 @@ which represents roughly 80% of the entire codebase.
 
 The remaining portion consists of:
 
-documentation
-
-configuration
-
-development tooling
-
-test infrastructure
-
+    •	documentation
+    •	configuration
+    •	development tooling
+    •	test infrastructure
 
 
 ---
 
-Engineering Challenges
+# Engineering Challenges
 
 Building deterministic trading infrastructure requires solving several difficult problems:
 
-strict event ordering in streaming pipelines
-
-duplicate event detection
-
-replay/live consistency
-
-deterministic feature computation
-
-scalable architecture design
-
+    •	strict event ordering in streaming pipelines
+    •	duplicate event detection
+    •	replay/live consistency
+    •	deterministic feature computation
+    •	scalable architecture design
 
 Addressing these challenges is a primary focus of the project.
 
 
 ---
 
-Engineering Principles
+# Engineering Principles
 
 The system is being built according to several guiding principles:
 
-Deterministic Systems
+## Deterministic Systems
 
 Identical input data should always produce identical results.
 
-Architecture First
+## Architecture First
 
 Infrastructure is designed before strategy logic.
 
-Feature-Driven Design
+## Feature-Driven Design
 
 Strategies operate on computed features, not raw market data.
 
-Reproducibility
+## Reproducibility
 
 Experiments and simulations must be reproducible.
 
-Modular Architecture
+## Modular Architecture
 
 Each subsystem should evolve independently.
 
 
 ---
 
-Research Direction
+# Research Direction
 
 The project explores several engineering and research topics:
 
-deterministic financial data pipelines
+    •	deterministic financial data pipelines
+    •	modular trading architectures
+    •	scalable feature engineering
+    •	reproducible algorithmic trading research
+    •	automated strategy experimentation
 
-modular trading architectures
-
-scalable feature engineering
-
-reproducible algorithmic trading research
-
-automated strategy experimentation
 
 
 
 ---
 
-Technology Stack
+# Technology Stack
 
 Primary technologies used in the project:
 
-Python
+    •	Python
+    •	modular system architecture
+    •	streaming data processing
+    •	deterministic pipelines
+    •	automated testing frameworks
 
-modular system architecture
 
-streaming data processing
+---
 
-deterministic pipelines
+# Project Milestones
 
-automated testing frameworks
+    Milestone	                            Status
+    
+    Deterministic data pipeline            	in progress
+    Live market data ingestion	            in progress
+    Feature engine infrastructure	        in progress
+    Historical replay engine	            planned
+    Strategy experimentation framework    	planned
+    Execution infrastructure            	planned
 
 
 
 ---
 
-Project Milestones
-
-Milestone	Status
-
-Deterministic data pipeline	in progress
-Live market data ingestion	in progress
-Feature engine infrastructure	in progress
-Historical replay engine	planned
-Strategy experimentation framework	planned
-Execution infrastructure	planned
-
-
-
----
-
-About the Author
+# About the Author
 
 Majid Askary
 
 AI Engineer & System Architect focused on:
 
-algorithmic trading infrastructure
-
-data-driven systems
-
-modular architecture
-
-AI-assisted engineering workflows
+    •	algorithmic trading infrastructure
+    •	data-driven systems
+    •	modular architecture
+    •	AI-assisted engineering workflows
 
 
 LinkedIn
@@ -418,7 +375,7 @@ m.askary84@yahoo.com
 
 ---
 
-Repository Scope
+# Repository Scope
 
 This repository intentionally contains only a high-level overview of the project.
 
@@ -427,7 +384,7 @@ Core implementation and internal architecture remain private while development c
 
 ---
 
-Disclaimer
+# Disclaimer
 
 This project is an engineering and research initiative.
 
