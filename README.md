@@ -1,43 +1,50 @@
 
-# AutoTrade Core — Public Overview
-
-
-AutoTrade — Deterministic Algorithmic Trading Infrastructure
+# AutoTrade — Deterministic Algorithmic Trading Infrastructure
  
  
  
  
 AutoTrade is a long-term engineering project focused on building a deterministic infrastructure for algorithmic trading systems.
 Rather than building a simple trading bot, this project explores how to design a robust modular platform capable of supporting:
-•	deterministic market data pipelines
-•	historical replay systems
-•	feature & indicator computation
-•	strategy experimentation
-•	backtesting infrastructure
-•	automated execution systems
+ •	deterministic market data pipelines
+ •	historical replay systems
+ •	feature & indicator computation
+ •	strategy experimentation
+ •	backtesting infrastructure
+ •	automated execution systems
 The core implementation of the system is currently private while development continues.
 This repository provides a high-level architectural overview of the project.
+
+---
  
-Project Vision
+# Project Vision
 Many trading systems grow organically into collections of scripts, loosely connected indicators, and fragile pipelines.
 AutoTrade explores a different engineering approach:
-Build a clean, deterministic trading infrastructure from the ground up.
+ Build a clean, deterministic trading infrastructure from the ground up.
 The long-term objective is to develop a platform capable of supporting:
-•	research-grade strategy development
-•	reproducible experiments
-•	scalable trading infrastructure
-•	automated decision systems
+ •	research-grade strategy development
+ •	reproducible experiments
+ •	scalable trading infrastructure
+ •	automated decision systems
 within a single coherent architecture.
+
+ ---
  
-Conceptual Architecture
+#  Conceptual Architecture
 A simplified conceptual view of the system architecture.
-```
+```bash
  mermaid flowchart TB
+
 subgraph DataSources["Market Data Sources"] EX1[Exchange APIs] EX2[WebSocket Streams] EX3[Historical Data] end
+
 subgraph DataLayer["Deterministic Data Layer"] INGEST[Data Ingestion] VALIDATE[Event Validation] DEDUP[Duplicate Detection] ORDER[Deterministic Ordering] end
+
 subgraph FeatureEngine["Feature & Indicator Engine"] FEAT[Feature Engine] INDICATORS[Indicator Kernels] MTF[Multi-Timeframe Features] end
+
 subgraph ContextLayer["Market Context"] CONTEXT[Market Context Builder] end
+
 subgraph StrategyLayer["Strategy Layer"] STRATEGY[Strategy Engine] BACKTEST[Backtesting & Replay] end
+
 subgraph ExecutionLayer["Execution Infrastructure"] EXEC[Execution Engine] RISK[Risk Controls] PORTFOLIO[Portfolio Tracking] end
 EX1 --> INGEST EX2 --> INGEST EX3 --> INGEST
 INGEST --> VALIDATE VALIDATE --> DEDUP DEDUP --> ORDER
@@ -58,11 +65,31 @@ This separation improves:
 System Component Map (High Level)
 The system consists of several major subsystems.
 ```
-text Market Data System ├── Live streaming pipeline ├── Data integrity validation └── Deterministic ingestion
-Feature Infrastructure ├── Feature computation engine ├── Indicator kernels ├── Multi-timeframe features └── Feature registry
-Replay Infrastructure ├── Historical replay engine ├── Deterministic simulation └── Regression testing
-Strategy Layer (future) ├── Strategy runtime ├── Decision framework └── Research experimentation tools
-Execution Layer (future) ├── Order management ├── Risk controls └── Portfolio tracking 
+Market Data System
+ ├── Live streaming pipeline
+ ├── Data integrity validation
+ └── Deterministic ingestion
+
+Feature Infrastructure
+ ├── Feature computation engine
+ ├── Indicator kernels
+ ├── Multi-timeframe features
+ └── Feature registry
+
+Replay Infrastructure
+ ├── Historical replay engine
+ ├── Deterministic simulation
+ └── Regression testing
+
+Strategy Layer (future)
+ ├── Strategy runtime
+ ├── Decision framework
+ └── Research experimentation tools
+
+Execution Layer (future)
+ ├── Order management
+ ├── Risk controls
+ └── Portfolio tracking
 ```
  
 Development Progress
