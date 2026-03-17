@@ -191,13 +191,13 @@ These components form the technical foundation of the platform.
 
 # Roadmap
 
-Phase 1 — Core Infrastructure (MVP)   ██████████░░░░░░░░░░░░░░░░░░░░
+Phase 1 — Core Infrastructure (MVP) .... ██████████░░░░░░░░░░░░░░░░░░░░
 
-Phase 2 — Market Intelligence         ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+Phase 2 — Market Intelligence .......... ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
-Phase 3 — Strategy Infrastructure     ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+Phase 3 — Strategy Infrastructure ...... ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
-Phase 4 — Execution Systems           ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+Phase 4 — Execution Systems ............ ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 
 ---
@@ -234,19 +234,19 @@ These stages represent capability expansion, not foundational infrastructure.
 
 # Codebase Metrics
 
-Approximate statistics generated with cloc:
+### Approximate statistics generated with cloc:
 
 Total files: ~457
 Total lines of code: ~45,364
 
-Language distribution:
+### Language distribution:
 
-Language	Files	Lines
-
-Python	357	36,711
-Markdown	74	7,396
-JSON	16	785
-PowerShell	3	204
+    Language	    Files	Lines
+    
+    Python	        357	    36,711
+    Markdown	    74	    7,396
+    JSON	        16	    785
+    PowerShell	    3	    204
 
 
 ## Python Code Share
