@@ -1,383 +1,276 @@
+# AutoTrade Core — Project Overview
 
+Because the repository and source code are private, this document is provided as a high-level overview of the project so it can be explained clearly **without exposing code, internal implementation details, or proprietary technical decisions**.
 
-# AutoTrade — Deterministic Algorithmic Trading Infrastructure
-
-    
-
-AutoTrade is a long-term engineering project focused on building a deterministic infrastructure for algorithmic trading systems.
-
-Instead of building a simple trading bot, the goal is to design a robust modular platform capable of supporting:
-
-    •	deterministic market data pipelines
-    •	historical replay systems
-    •	feature & indicator computation
-    •	strategy experimentation
-    •	backtesting infrastructure
-    •	automated execution systems
-
-
-The core implementation is currently private while development continues.
-
-This repository provides a high-level overview of the architecture and engineering direction of the project.
-
+This file is intended for non-technical or semi-technical readers who need to understand what the project is, what has been completed, and where it is going next.
 
 ---
 
-# Project Vision
+## What the Project Is
 
-Many algorithmic trading systems evolve into collections of scripts and loosely connected indicators.
+AutoTrade Core is a private engineering project focused on building a **reliable, deterministic foundation for algorithmic trading systems**.
 
-AutoTrade explores a different approach:
+The project is not being built as a quick trading bot or a collection of disconnected scripts.  
+It is being built as a structured platform that can support data handling, market analysis, decision systems, execution control, and future product layers in a clean and scalable way.
 
-    > Build a clean, deterministic trading infrastructure from the ground up.
-
-
-
-The long-term goal is a system capable of supporting:
-
-    •	research-grade strategy development
-    •	reproducible experiments
-    •	scalable trading infrastructure
-    •	automated trading systems
-
-within a single coherent architecture.
-
+This document is a **high-level overview only**.  
+It intentionally avoids source code, internal implementation details, and proprietary design specifics.
 
 ---
 
-# Conceptual System Architecture
+## What the Project Is Trying to Build
 
-flowchart TB
+The long-term goal of AutoTrade Core is to create a trading platform that can:
 
-    subgraph Sources["Market Data Sources"]
-    A[Exchange APIs]
-    B[WebSocket Streams]
-    C[Historical Datasets]
-    end
-    
-    subgraph DataLayer["Deterministic Data Layer"]
-    D[Data Ingestion]
-    E[Event Validation]
-    F[Duplicate Detection]
-    G[Deterministic Ordering]
-    end
-    
-    subgraph FeatureEngine["Feature & Indicator Engine"]
-    H[Feature Engine]
-    I[Indicator Kernels]
-    J[Multi-Timeframe Features]
-    end
-    
-    subgraph Context["Market Context Layer"]
-    K[Market Context Builder]
-    end
-    
-    subgraph Strategy["Strategy Layer"]
-    L[Strategy Engine]
-    M[Backtesting / Replay]
-    end
-    
-    subgraph Execution["Execution Infrastructure"]
-    N[Execution Engine]
-    O[Risk Controls]
-    P[Portfolio Tracking]
-    end
-    
-    A --> D
-    B --> D
-    C --> D
-    
-    D --> E
-    E --> F
-    F --> G
-    
-    G --> H
-    H --> I
-    I --> J
-    
-    J --> K
-    K --> L
-    
-    L --> M
-    L --> N
-    
-    N --> O
-    O --> P
+- process market data in a reliable and repeatable way
+- support research and strategy development
+- provide a clean decision layer for trading logic
+- support controlled execution and risk management later
+- grow into a broader product and automation platform over time
 
+In simple terms:
+
+**the project is building the infrastructure first, so later trading behavior can be built on top of a strong foundation rather than on shortcuts.**
 
 ---
 
-# Key Architectural Principle
+## Why This Project Exists
 
-Strategies operate on features — not raw market data.
+Many trading systems become difficult to trust as they grow.  
+They often start as small experiments, then slowly turn into a mixture of indicators, scripts, exceptions, and hidden assumptions.
 
-Indicators and transformations are computed inside a dedicated feature engine, ensuring:
+AutoTrade Core is taking a different path.
 
-    •	reproducibility
-    •	deterministic behavior
-    •	cleaner strategy code
-    •	architectural separation of concerns
+The project is being developed around a few clear principles:
 
+- **reliability before speed**
+- **clarity before shortcuts**
+- **repeatability before convenience**
+- **architecture before feature sprawl**
+- **long-term scalability over temporary hacks**
 
----
-
-# System Component Map
-
-    Market Data System
-     ├── Live streaming pipeline
-     ├── Data integrity validation
-     └── Deterministic ingestion
-    
-    Feature Infrastructure
-     ├── Feature computation engine
-     ├── Indicator kernels
-     ├── Multi-timeframe features
-     └── Feature registry
-    
-    Replay Infrastructure
-     ├── Historical replay engine
-     ├── Deterministic simulation
-     └── Regression testing
-    
-    Strategy Layer (future)
-     ├── Strategy runtime
-     ├── Decision framework
-     └── Research experimentation tools
-    
-    Execution Layer (future)
-     ├── Order management
-     ├── Risk controls
-     └── Portfolio tracking
-
+That makes progress slower in the beginning, but much stronger later.
 
 ---
 
-# Development Progress
+## Current Status
 
-The project is currently under active development.
+### Project milestone
+**EPIC 1 is complete.**
 
-The focus of the current stage is building core infrastructure before strategy logic.
+This means the project now has a closed and working **market data and market intelligence foundation**.
 
-## Estimated Completion
+### Current position in the broader build plan
+- **EPIC 1 completion:** 100%
+- **Phase 1 progress (by major epic count):** ~20%
+- **Next step:** define and execute **EPIC 2**
 
-≈ 25% of the core infrastructure phase is complete.
+### Progress snapshot
 
-Important clarification:
+```text
+EPIC 1 — Foundation Layer .............. 100%  ████████████████████████████████
+Phase 1 — Core Trading Program ......... ~20%  ██████░░░░░░░░░░░░░░░░░░░░░░░░░░
+Long-Term Platform Vision .............. early-stage / intentionally incremental
+```
 
-This percentage refers only to the infrastructure MVP, not the full long-term system.
+```text
+PHASE 2 — Stabilization & Capital Scaling      ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+PHASE 3 — Advanced Profit Engines              ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+PHASE 4 — Platformization & Expansion          ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+```
 
+Important note:
 
----
-
-# MVP Scope
-
-The Minimum Viable Platform (MVP) corresponds to:
-
-Phase 1 — Core Infrastructure
-
-The MVP includes the foundational components required for deterministic trading research:
-
-    •	deterministic market data ingestion
-    •	live streaming pipeline
-    •	historical replay infrastructure
-    •	feature & indicator computation engine
-    •	feature-driven strategy interface
-
-
-These components form the technical foundation of the platform.
-
+The percentage above refers to the **current structured Phase 1 build program**, not the full long-term vision of the platform.
 
 ---
 
-# Roadmap
+## What Has Been Completed So Far
 
-Phase 1 — Core Infrastructure (MVP) .... ██████████░░░░░░░░░░░░░░░░░░░░
+By the end of EPIC 1, the project has already built the core foundation needed before higher-level trading logic can be trusted.
 
-Phase 2 — Market Intelligence .......... ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+That completed foundation includes:
 
-Phase 3 — Strategy Infrastructure ...... ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+- **historical market data foundation**
+- **live deterministic market-data processing**
+- **feature and indicator infrastructure**
+- **market context construction**
+- **integrity, audit, and quality-governance layers**
+- **a first non-price data extension boundary**
 
-Phase 4 — Execution Systems ............ ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+In practical terms, the project can now:
 
-
----
-
-# What Remains for the MVP
-
-Remaining work includes:
-
-    •	feature engine expansion
-    •	strategy runtime infrastructure
-    •	deterministic backtesting framework
-    •	market context aggregation
-
-
-Once completed, the system will provide a fully functional research-grade trading infrastructure.
-
+- organize and process market information consistently
+- preserve repeatability across runs
+- detect and surface quality issues instead of hiding them
+- prepare structured market-state outputs for future decision systems
+- provide a strong engineering base for the next phase of development
 
 ---
 
-# Beyond the MVP
+## What the Platform Can Do After EPIC 1
 
-Later phases will introduce:
+At this stage, the platform is no longer just a technical experiment.
 
-    •	feature engine expansion
-    •	strategy runtime infrastructure
-    •	deterministic backtesting framework
-    •	market context aggregation
+It can now function as a **serious market-data and market-intelligence foundation**.
 
+That means it can already support:
 
-These stages represent capability expansion, not foundational infrastructure.
+- structured market data ingestion and handling
+- deterministic processing of historical and live market information
+- repeatable feature computation
+- market-state preparation for downstream strategy layers
+- audit-friendly and review-friendly engineering workflows
+- future expansion without reworking the core foundation
 
-
----
-
-# Codebase Metrics
-
-### Approximate statistics generated with cloc:
-
-Total files: ~457
-Total lines of code: ~45,364
-
-### Language distribution:
-
-    Language	    Files	Lines
-    
-    Python	        357	    36,711
-    Markdown	    74	    7,396
-    JSON	        16	    785
-    PowerShell	    3	    204
-
-
-## Python Code Share
-
-≈ 36,700 lines of Python
-
-which represents roughly 80% of the entire codebase.
-
-The remaining portion consists of:
-
-    •	documentation
-    •	configuration
-    •	development tooling
-    •	test infrastructure
-
+This is a major milestone because most system failures happen when projects try to build advanced behavior on top of weak foundations.  
+That foundation work is now largely done for EPIC 1.
 
 ---
 
-# Engineering Challenges
+## What Comes Next
 
-Building deterministic trading infrastructure requires solving several difficult problems:
+The project is moving step by step.
 
-    •	strict event ordering in streaming pipelines
-    •	duplicate event detection
-    •	replay/live consistency
-    •	deterministic feature computation
-    •	scalable architecture design
+### After EPIC 1
+The system now has a stable foundation for:
+- market data
+- market-state construction
+- engineering governance
+- future extensibility
 
-Addressing these challenges is a primary focus of the project.
+### EPIC 2
+The next stage is expected to introduce the **decision / strategy layer**.
 
+That is where the platform will begin turning structured market understanding into controlled trading decisions.
 
----
+### Later stages
+Later stages are expected to introduce:
+- execution behavior
+- capital and risk controls
+- evaluation and go-live gates
+- broader operational and product capabilities
 
-# Engineering Principles
+The project is intentionally being built in this order:
 
-The system is being built according to several guiding principles:
-
-## Deterministic Systems
-
-Identical input data should always produce identical results.
-
-## Architecture First
-
-Infrastructure is designed before strategy logic.
-
-## Feature-Driven Design
-
-Strategies operate on computed features, not raw market data.
-
-## Reproducibility
-
-Experiments and simulations must be reproducible.
-
-## Modular Architecture
-
-Each subsystem should evolve independently.
-
+**foundation → decisions → execution → control → evaluation → productization**
 
 ---
 
-# Research Direction
+## What Phase 1 Is Expected to Achieve
 
-The project explores several engineering and research topics:
+When the broader Phase 1 program is finished, the project is expected to be able to support:
 
-    •	deterministic financial data pipelines
-    •	modular trading architectures
-    •	scalable feature engineering
-    •	reproducible algorithmic trading research
-    •	automated strategy experimentation
+- deterministic market-data handling
+- structured decision-making layers
+- controlled execution infrastructure
+- capital/risk protection layers
+- evaluation and deployment readiness checks
 
+So EPIC 1 should be understood as:
 
-
-
----
-
-# Technology Stack
-
-Primary technologies used in the project:
-
-    •	Python
-    •	modular system architecture
-    •	streaming data processing
-    •	deterministic pipelines
-    •	automated testing frameworks
-
+**the completed foundation of the core trading program, not the final finished product.**
 
 ---
 
-# Project Milestones
+## Project Scale Snapshot
 
-    Milestone	                            Status
-    
-    Deterministic data pipeline            	in progress
-    Live market data ingestion	            in progress
-    Feature engine infrastructure	        in progress
-    Historical replay engine	            planned
-    Strategy experimentation framework    	planned
-    Execution infrastructure            	planned
+Based on the latest repository snapshot at the end of EPIC 1:
 
+### Repository size
+- **Total files:** 728
+- **Total lines tracked by cloc:** 95,208
 
+### Language footprint
+- **Python:** 79,171 lines
+- **Markdown:** 12,333 lines
+- **JSON:** 3,110 lines
+- plus smaller amounts of PowerShell, text, TOML, and YAML
+
+### Approximate composition
+- **Python share of the codebase:** ~83%
+- **Markdown/documentation share:** ~13%
+
+This shows that the project is already a substantial engineering codebase, with significant investment in both implementation and documentation.
 
 ---
 
-# About the Author
+## Quality Snapshot
+
+Latest full test run at the end of EPIC 1:
+
+- **1162 tests passed**
+
+This matters because the project is not only growing in size; it is being developed with a strong emphasis on **verification, regression safety, and controlled evolution**.
+
+---
+
+## Technology Stack
+
+The project is built primarily in:
+
+- **Python** as the main implementation language
+- structured documentation and configuration files
+- automated testing and validation workflows
+
+For a non-technical reader, the important point is simple:
+
+**the project is being built as a serious software system, not as a one-off prototype.**
+
+---
+
+## What Makes the Project Different
+
+AutoTrade Core is not trying to impress through flashy demos first.
+
+Its real strength is in how it is being built:
+
+- carefully
+- systematically
+- with long-term structure
+- with visible progress
+- with room for future growth
+
+The aim is to create something that can become dependable, explainable, and extensible — not something that works once and collapses when complexity increases.
+
+---
+
+## Repository Scope
+
+This repository is private.
+
+The purpose of this overview file is to explain:
+
+- what the project is
+- where it currently stands
+- what has already been achieved
+- what comes next
+
+It intentionally does **not** expose:
+
+- source code
+- private internal architecture details
+- proprietary implementation ideas
+- confidential design decisions
+
+---
+
+## About the Author
 
 Majid Askary
 
 AI Engineer & System Architect focused on:
 
-    •	algorithmic trading infrastructure
-    •	data-driven systems
-    •	modular architecture
-    •	AI-assisted engineering workflows
-
+- algorithmic trading infrastructure
+- data-driven systems
+- modular architecture
+- AI-assisted engineering workflows
 
 ### LinkedIn
-
 https://www.linkedin.com/in/majidaskary
 
 ### Contact
-
 m.askary84@yahoo.com
-
-
----
-
-# Repository Scope
-
-This repository intentionally contains only a high-level overview of the project.
-
-Core implementation and internal architecture remain private while development continues.
 
 
 ---
@@ -387,3 +280,9 @@ Core implementation and internal architecture remain private while development c
 This project is an engineering and research initiative.
 
 It does not provide financial advice or trading signals.
+
+---
+
+## In One Sentence
+
+**AutoTrade Core is a private, large-scale software project building a deterministic and scalable trading infrastructure — and EPIC 1 has now completed the foundation layer that everything else will build on.**
