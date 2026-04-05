@@ -69,11 +69,16 @@ This means the project now has a closed and working **market data and market int
 
 ```text
 EPIC 1 — Foundation Layer .............. 100%  ████████████████████████████████
-Phase 1 — Core Trading Program ......... ~20%  ██████░░░░░░░░░░░░░░░░░░░░░░░░░░
+EPIC 2 — xxxxxxxxxx Layer .............. 100%  ████████████████████████████████
+EPIC 3 — xxxxxxxxxx Layer .............. 0%    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+EPIC 4 — xxxxxxxxxx Layer .............. 0%    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+EPIC 5 — xxxxxxxxxx Layer .............. 0%    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+Phase 1 — Core Trading Program ......... ~40%  ████████████░░░░░░░░░░░░░░░░░░░░
 Long-Term Platform Vision .............. early-stage / intentionally incremental
 ```
 
 ```text
+Phase 1 — Core Trading Program ......... ~40%  ████████████░░░░░░░░░░░░░░░░░░░░
 PHASE 2 — Stabilization & Capital Scaling      ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 PHASE 3 — Advanced Profit Engines              ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 PHASE 4 — Platformization & Expansion          ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
