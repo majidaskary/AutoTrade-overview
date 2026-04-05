@@ -57,13 +57,15 @@ That makes progress slower in the beginning, but much stronger later.
 
 ### Project milestone
 **EPIC 1 is complete.**
+**EPIC 2 is complete.**
 
 This means the project now has a closed and working **market data and market intelligence foundation**.
 
 ### Current position in the broader build plan
 - **EPIC 1 completion:** 100%
-- **Phase 1 progress (by major epic count):** ~20%
-- **Next step:** define and execute **EPIC 2**
+- **EPIC 2 completion:** 100%
+- **Phase 1 progress (by major epic count):** ~40%
+- **Next step:** define and execute **EPIC 3**
 
 ### Progress snapshot
 
