@@ -56,12 +56,17 @@ That makes progress slower in the beginning, but much stronger later.
 ## Current Status
 
 ### Project milestone
-**EPIC 1 is complete.**
+
+**EPIC 1 is complete.**  
 **EPIC 2 is complete.**
 
-This means the project now has a closed and working **market data and market intelligence foundation**.
+This means the project now has a closed and working:
+
+- **descriptive / market-intelligence foundation** from EPIC 1
+- **Strategy Engine / Decision Layer foundation** from EPIC 2
 
 ### Current position in the broader build plan
+
 - **EPIC 1 completion:** 100%
 - **EPIC 2 completion:** 100%
 - **Phase 1 progress (by major epic count):** ~40%
@@ -70,20 +75,24 @@ This means the project now has a closed and working **market data and market int
 ### Progress snapshot
 
 ```text
-EPIC 1 — Foundation Layer .............. 100%  ████████████████████████████████
-EPIC 2 — xxxxxxxxxx Layer .............. 100%  ████████████████████████████████
-EPIC 3 — xxxxxxxxxx Layer .............. 0%    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-EPIC 4 — xxxxxxxxxx Layer .............. 0%    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-EPIC 5 — xxxxxxxxxx Layer .............. 0%    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-Phase 1 — Core Trading Program ......... ~40%  ████████████░░░░░░░░░░░░░░░░░░░░
-Long-Term Platform Vision .............. early-stage / intentionally incremental
+EPIC 1 — Descriptive / Intelligence Foundation .... 100%  ████████████████████████████████
+EPIC 2 — Decision / Strategy Foundation ........... 100%  ████████████████████████████████
+EPIC 3 — Execution Layer ..........................   0%  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+EPIC 4 — Risk & Portfolio Layer ...................   0%  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+EPIC 5 — Evaluation & Go-Live Gate ................   0%  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+Phase 1 — Core Trading Program .................... ~40%  ████████████░░░░░░░░░░░░░░░░░░░░
+Long-Term Platform Vision ......................... early-stage / intentionally incremental
 ```
 
 ```text
-Phase 1 — Core Trading Program ......... ~40%  ████████████░░░░░░░░░░░░░░░░░░░░
-PHASE 2 — Stabilization & Capital Scaling      ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-PHASE 3 — Advanced Profit Engines              ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-PHASE 4 — Platformization & Expansion          ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+PHASE 1 — Core Trading Program .................... ~40%  ████████████░░░░░░░░░░░░░░░░░░░░
+PHASE 2 — Stabilization & Capital Scaling .........   0%  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+PHASE 3 — Advanced Profit Engines .................   0%  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+PHASE 4 — Platformization & Expansion .............   0%  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+```
+
+```text
+Project — Auto trade ..............................  10%  ███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ```
 
 Important note:
@@ -94,16 +103,19 @@ The percentage above refers to the **current structured Phase 1 build program**,
 
 ## What Has Been Completed So Far
 
-By the end of EPIC 1, the project has already built the core foundation needed before higher-level trading logic can be trusted.
+By the end of EPIC 1 and EPIC 2, the project has already built the two upstream layers needed before execution and capital-bearing behavior can be trusted.
 
 That completed foundation includes:
 
 - **historical market data foundation**
-- **live deterministic market-data processing**
+- **live deterministic market-event and candle processing**
 - **feature and indicator infrastructure**
 - **market context construction**
 - **integrity, audit, and quality-governance layers**
 - **a first non-price data extension boundary**
+- **a canonical Strategy Engine / Decision Layer**
+- **deterministic strategy runtime and orchestration semantics**
+- **decision logging, audit, parity, and hardening surfaces**
 
 In practical terms, the project can now:
 
@@ -111,15 +123,16 @@ In practical terms, the project can now:
 - preserve repeatability across runs
 - detect and surface quality issues instead of hiding them
 - prepare structured market-state outputs for future decision systems
-- provide a strong engineering base for the next phase of development
+- produce controlled decision-layer outputs on top of governed descriptive truth
+- provide a strong engineering base for execution, risk, and evaluation work in the next major stages
 
 ---
 
-## What the Platform Can Do After EPIC 1
+## What the Platform Can Do After EPIC 2
 
 At this stage, the platform is no longer just a technical experiment.
 
-It can now function as a **serious market-data and market-intelligence foundation**.
+It can now function as a **serious descriptive and decision-layer foundation**.
 
 That means it can already support:
 
@@ -127,11 +140,12 @@ That means it can already support:
 - deterministic processing of historical and live market information
 - repeatable feature computation
 - market-state preparation for downstream strategy layers
+- deterministic strategy / decision-layer behavior on top of canonical descriptive truth
 - audit-friendly and review-friendly engineering workflows
-- future expansion without reworking the core foundation
+- future expansion without reopening the upstream foundation
 
-This is a major milestone because most system failures happen when projects try to build advanced behavior on top of weak foundations.  
-That foundation work is now largely done for EPIC 1.
+This is a major milestone because many system failures happen when projects try to build execution or capital logic on top of weak descriptive or decision foundations.  
+That upstream work is now largely done for EPIC 1 and EPIC 2.
 
 ---
 
@@ -139,21 +153,26 @@ That foundation work is now largely done for EPIC 1.
 
 The project is moving step by step.
 
-### After EPIC 1
-The system now has a stable foundation for:
+### After EPIC 2
+
+The system now has a stable upstream foundation for:
+
 - market data
 - market-state construction
 - engineering governance
+- decision / strategy behavior
 - future extensibility
 
-### EPIC 2
-The next stage is expected to introduce the **decision / strategy layer**.
+### EPIC 3
 
-That is where the platform will begin turning structured market understanding into controlled trading decisions.
+The next stage is expected to introduce the **execution layer**.
+
+That is where the platform will begin turning accepted decision-layer outputs into controlled execution behavior.
 
 ### Later stages
+
 Later stages are expected to introduce:
-- execution behavior
+
 - capital and risk controls
 - evaluation and go-live gates
 - broader operational and product capabilities
@@ -174,39 +193,42 @@ When the broader Phase 1 program is finished, the project is expected to be able
 - capital/risk protection layers
 - evaluation and deployment readiness checks
 
-So EPIC 1 should be understood as:
+So EPIC 1 and EPIC 2 should be understood as:
 
-**the completed foundation of the core trading program, not the final finished product.**
+**the completed upstream foundation of the core trading program, not the final finished product.**
 
 ---
 
 ## Project Scale Snapshot
 
-Based on the latest repository snapshot at the end of EPIC 1:
+Based on the latest verified repository snapshot before EPIC 3:
 
 ### Repository size
-- **Total files:** 728
-- **Total lines tracked by cloc:** 95,208
+
+- **Total unique files tracked by cloc:** 814
+- **Total lines tracked by cloc:** 119,098
 
 ### Language footprint
-- **Python:** 79,171 lines
-- **Markdown:** 12,333 lines
-- **JSON:** 3,110 lines
+
+- **Python:** 94,585 lines
+- **Markdown:** 20,838 lines
+- **JSON:** 3,076 lines
 - plus smaller amounts of PowerShell, text, TOML, and YAML
 
 ### Approximate composition
-- **Python share of the codebase:** ~83%
-- **Markdown/documentation share:** ~13%
 
-This shows that the project is already a substantial engineering codebase, with significant investment in both implementation and documentation.
+- **Python share of the codebase:** ~79%
+- **Markdown/documentation share:** ~17.5%
+
+This shows that the project is already a large engineering codebase, with substantial investment in both implementation and governance/documentation.
 
 ---
 
 ## Quality Snapshot
 
-Latest full test run at the end of EPIC 1:
+Latest full test run before EPIC 3:
 
-- **1162 tests passed**
+- **1373 tests passed**
 
 This matters because the project is not only growing in size; it is being developed with a strong emphasis on **verification, regression safety, and controlled evolution**.
 
@@ -274,11 +296,12 @@ AI Engineer & System Architect focused on:
 - AI-assisted engineering workflows
 
 ### LinkedIn
-https://www.linkedin.com/in/majidaskary
+
+[https://www.linkedin.com/in/majidaskary](https://www.linkedin.com/in/majidaskary)
 
 ### Contact
-m.askary84@yahoo.com
 
+[m.askary84@yahoo.com](mailto:m.askary84@yahoo.com)
 
 ---
 
@@ -292,4 +315,4 @@ It does not provide financial advice or trading signals.
 
 ## In One Sentence
 
-**AutoTrade Core is a private, large-scale software project building a deterministic and scalable trading infrastructure — and EPIC 1 has now completed the foundation layer that everything else will build on.**
+**AutoTrade Core is a private, large-scale software project building a deterministic and scalable trading infrastructure — and EPIC 1 plus EPIC 2 have now completed the upstream foundation that later execution, risk, and evaluation layers will build on.**
