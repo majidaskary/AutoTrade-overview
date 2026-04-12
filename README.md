@@ -87,26 +87,23 @@ This means the project now has a closed and working:
 ### Progress snapshot
 
 ```text
-EPIC 1 — Descriptive / Intelligence Foundation .... 100%  ████████████████████████████████  ~25% of 100%
-EPIC 2 — Decision / Strategy Foundation ........... 100%  ████████████████████████████████  ~25% of 100%
-EPIC 3 — Execution Layer .......................... 100%  ████████████████████████████████  ~10% of 100%
-EPIC 4 — Risk & Portfolio Layer ...................   0%  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  ~10% of 100%
-EPIC 5 — Evaluation & Go-Live Gate ................   0%  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  ~10% of 100%
-EPIC F — Flow Layer ...............................   0%  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  ~10% of 100%
-EPIC H — Hystorical Data Layer ....................   0%  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  ~10% of 100%
+EPIC 1 — Descriptive / Intelligence Foundation ... 100%  ████████████████████  ~25% of 100%
+EPIC 2 — Decision / Strategy Foundation .......... 100%  ████████████████████  ~25% of 100%
+EPIC 3 — Execution Layer ......................... 100%  ████████████████████  ~10% of 100%
+EPIC 4 — Risk & Portfolio Layer ..................   0%  ░░░░░░░░░░░░░░░░░░░░  ~10% of 100%
+EPIC 5 — Evaluation & Go-Live Gate ...............   0%  ░░░░░░░░░░░░░░░░░░░░  ~10% of 100%
+EPIC F — Flow Layer ..............................   0%  ░░░░░░░░░░░░░░░░░░░░  ~10% of 100%
+EPIC H — Hystorical Data Layer ...................   0%  ░░░░░░░░░░░░░░░░░░░░  ~10% of 100%
 
-Phase 1 — Core Trading Program .................... ~60%  ██████████████████░░░░░░░░░░░░░░
-
-Long-Term Platform Vision ......................... early-stage / intentionally incremental
+Phase 1 — Core Trading Program ................... ~60%  ████████████░░░░░░░░
 ```
 ```text
-PHASE 1 — Core Trading Program .................... ~60%  ██████████████████░░░░░░░░░░░░░░  ~25% of 100%
-PHASE 2 — Stabilization & Capital Scaling .........   0%  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  ~25% of 100%
-PHASE 3 — Advanced Profit Engines .................   0%  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  ~25% of 100%
-PHASE 4 — Platformization & Expansion .............   0%  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  ~25% of 100%
-```
-```text
-AutoTrade Project ................................. ~15%  █████░░░░░░░░░░░░░░░░░░░░░░░░░░░
+PHASE 1 — Core Trading Program ................... ~60%  ████████████░░░░░░░░  ~25% of 100%
+PHASE 2 — Stabilization & Capital Scaling ........   0%  ░░░░░░░░░░░░░░░░░░░░  ~25% of 100%
+PHASE 3 — Advanced Profit Engines ................   0%  ░░░░░░░░░░░░░░░░░░░░  ~25% of 100%
+PHASE 4 — Platformization & Expansion ............   0%  ░░░░░░░░░░░░░░░░░░░░  ~25% of 100%
+
+AutoTrade Project ................................ ~15%  ███░░░░░░░░░░░░░░░░░
 ```
 Important note:
 
