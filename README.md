@@ -96,9 +96,9 @@ EPIC F — Flow Layer ...............................   0%  ░░░░░░�
 EPIC H — Hystorical Data Layer ....................   0%  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 Phase 1 — Core Trading Program .................... ~60%  ██████████████████░░░░░░░░░░░░░░
+
 Long-Term Platform Vision ......................... early-stage / intentionally incremental
 ```
-
 ```text
 PHASE 1 — Core Trading Program .................... ~60%  ██████████████████░░░░░░░░░░░░░░
 PHASE 2 — Stabilization & Capital Scaling .........   0%  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
