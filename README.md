@@ -93,6 +93,9 @@ EPIC 3 — Execution Layer .......................... 100%  ██████�
 EPIC 4 — Risk & Portfolio Layer ...................   0%  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 EPIC 5 — Evaluation & Go-Live Gate ................   0%  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
+EPIC F — Flow Layer ...............................   0%  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+EPIC H — Hystorical Data Layer ....................   0%  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
 Phase 1 — Core Trading Program .................... ~60%  ██████████████████░░░░░░░░░░░░░░
 Long-Term Platform Vision ......................... early-stage / intentionally incremental
 ```
