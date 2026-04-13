@@ -62,7 +62,7 @@ That makes progress slower at the beginning, but much stronger later.
 
 ---
 
-## Current Status
+## Current Status  
 
 ### Project milestone
 
