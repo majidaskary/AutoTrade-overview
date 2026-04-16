@@ -1,5 +1,6 @@
 # AutoTrade Core — Project Overview
 
+
 Because the repository and source code are private, this document provides a high-level explanation of the project **without exposing source code, internal implementation details, or proprietary technical decisions**.
 
 This file is intended for non-technical or semi-technical readers who need to understand what the project is, what has already been completed, and what comes next.
@@ -105,6 +106,7 @@ PHASE 4 — Platformization & Expansion ............    0%  ░░░░░░�
 
 AutoTrade Project ................................  ~15%  ███░░░░░░░░░░░░░░░░░
 ```
+
 Important note:
 
 The percentage above refers to the **current structured Phase 1 build program**, not the full long-term platform vision.
