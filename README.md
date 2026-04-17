@@ -343,3 +343,4 @@ It does not provide financial advice or trading signals.
 ## In One Sentence
 
 **AutoTrade Core is a private, large-scale software project building a deterministic, contract-driven, and scalable trading infrastructure — and EPIC 1 through EPIC 3 now close the descriptive, decision, and execution foundation that later risk and evaluation layers will build on.**
+
