@@ -1,6 +1,5 @@
 # AutoTrade Core — Project Overview
 
-
 Because the repository and source code are private, this document provides a high-level explanation of the project **without exposing source code, internal implementation details, or proprietary technical decisions**.
 
 This file is intended for non-technical or semi-technical readers who need to understand what the project is, what has already been completed, and what comes next.
