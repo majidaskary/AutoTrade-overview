@@ -17,7 +17,8 @@ It is being built as a structured platform that can support:
 - descriptive and intelligence layers
 - decision systems
 - execution systems
-- later risk and evaluation layers
+- risk and portfolio control layers
+- evaluation and go-live decision layers
 - future product and automation expansion
 
 This document is a **high-level overview only**.  
@@ -33,8 +34,8 @@ The long-term goal of AutoTrade Core is to create a trading platform that can:
 - support research and strategy development
 - provide a clean decision layer for trading logic
 - provide a governed execution layer
-- support capital and risk control later
-- support evaluation and go-live decision layers later
+- provide a capital-aware Risk / Portfolio foundation
+- support evaluation and go-live decision layers
 - grow into a broader platform over time
 
 In simple terms:
@@ -62,48 +63,52 @@ That makes progress slower at the beginning, but much stronger later.
 
 ---
 
-## Current Status  
+## Current Status
 
 ### Project milestone
 
 **EPIC 1 is complete.**  
 **EPIC 2 is complete.**  
-**EPIC 3 is complete.**
+**EPIC 3 is complete.**  
+**EPIC 4 is complete.**
 
 This means the project now has a closed and working:
 
 - **descriptive / market-intelligence foundation** from EPIC 1
 - **Strategy Engine / Decision Layer foundation** from EPIC 2
 - **Execution Layer foundation** from EPIC 3
+- **Risk / Portfolio foundation layer** from EPIC 4
 
 ### Current position in the broader build plan
 
 - **EPIC 1 completion:** 100%
 - **EPIC 2 completion:** 100%
 - **EPIC 3 completion:** 100%
-- **Phase 1 progress (by major epic count):** ~60%
-- **Next step:** define and execute **EPIC 4 — Risk & Portfolio Layer**
+- **EPIC 4 completion:** 100%
+- **Phase 1 progress by major epic count:** ~70%
+- **Next step:** define and execute **EPIC 5 — Evaluation & Go-Live Gate**
 
 ### Progress snapshot
 
 ```text
+Phase 1 — Core Trading Program ...................  ~70%  ██████████████░░░░░░
+
 EPIC 1 — Descriptive / Intelligence Foundation ...  100%  ████████████████████    ~25%
 EPIC 2 — Decision / Strategy Foundation ..........  100%  ████████████████████    ~25%
 EPIC 3 — Execution Layer .........................  100%  ████████████████████    ~10%
-EPIC 4 — Risk & Portfolio Layer ..................    0%  ░░░░░░░░░░░░░░░░░░░░    ~10%
+EPIC 4 — Risk & Portfolio Layer ..................  100%  ████████████████████    ~10%
 EPIC 5 — Evaluation & Go-Live Gate ...............    0%  ░░░░░░░░░░░░░░░░░░░░    ~10%
 EPIC F — Flow Layer ..............................    0%  ░░░░░░░░░░░░░░░░░░░░    ~10%
-EPIC H — Hystorical Data Layer ...................    0%  ░░░░░░░░░░░░░░░░░░░░    ~10%
-
-Phase 1 — Core Trading Program ...................  ~60%  ████████████░░░░░░░░
+EPIC H — Historical Data Layer ...................    0%  ░░░░░░░░░░░░░░░░░░░░    ~10%
 ```
+
 ```text
-PHASE 1 — Core Trading Program ...................  ~60%  ████████████░░░░░░░░    ~25%
+AutoTrade Project ................................  ~18%  ████░░░░░░░░░░░░░░░░
+
+PHASE 1 — Core Trading Program ...................  ~70%  ██████████████░░░░░░    ~25%
 PHASE 2 — Stabilization & Capital Scaling ........    0%  ░░░░░░░░░░░░░░░░░░░░    ~25%
 PHASE 3 — Advanced Profit Engines ................    0%  ░░░░░░░░░░░░░░░░░░░░    ~25%
 PHASE 4 — Platformization & Expansion ............    0%  ░░░░░░░░░░░░░░░░░░░░    ~25%
-
-AutoTrade Project ................................  ~15%  ███░░░░░░░░░░░░░░░░░
 ```
 
 Important note:
@@ -112,9 +117,55 @@ The percentage above refers to the **current structured Phase 1 build program**,
 
 ---
 
+## Project Scale Snapshot
+
+Based on the latest verified repository snapshot after EPIC 4 closeout:
+
+### Repository size
+
+- **Total text files tracked by cloc:** 972
+- **Total unique files tracked by cloc:** 968
+- **Total lines tracked by cloc:** 178,690
+
+### Language footprint
+
+```text
+---------------------------------------
+Language           files           code
+---------------------------------------
+Python               817         143972
+Markdown             113          31043
+JSON                  28           3076
+Text                   5            306
+PowerShell             3            204
+TOML                   1             61
+YAML                   1             28
+---------------------------------------
+SUM:                 968         178690
+```
+
+### Approximate composition
+
+- **Python share of the tracked codebase:** ~80.6%
+- **Markdown/documentation share:** ~17.4%
+
+This shows that the project is already a large engineering codebase, with substantial investment in both implementation and governance/documentation.
+
+---
+
+## Quality Snapshot
+
+Latest full verified test run after EPIC 4 closeout:
+
+- **2351 tests passed**
+
+This matters because the project is not only growing in size; it is being developed with a strong emphasis on **verification, regression safety, and controlled evolution**.
+
+---
+
 ## What Has Been Completed So Far
 
-By the end of EPIC 1, EPIC 2, and EPIC 3, the project has already built the three upstream layers required before capital-bearing behavior can be trusted.
+By the end of EPIC 1, EPIC 2, EPIC 3, and EPIC 4, the project has built the four core foundation layers required before formal evaluation and go-live work can be trusted.
 
 That completed foundation includes:
 
@@ -133,6 +184,19 @@ That completed foundation includes:
 - **fill, execution outcome, fee, and slippage foundations**
 - **execution adapter/runtime foundations**
 - **execution-layer classification, alignment, and freeze-ready closeout anchors**
+- **Risk / Portfolio boundary contracts**
+- **sizing and capital semantics**
+- **exposure-control semantics**
+- **portfolio state and mutation semantics**
+- **valuation, equity, PnL, and accounting-boundary semantics**
+- **runtime/review/reporting interpretation semantics**
+- **Risk / Portfolio ownership map**
+- **Risk / Portfolio boundary seam registry**
+- **Risk / Portfolio deferred ownership registry**
+- **Risk / Portfolio evaluation handoff contract**
+- **Risk / Portfolio change policy**
+- **Risk / Portfolio readiness verification harness**
+- **final Risk / Portfolio layer readiness gate**
 
 In practical terms, the project can now:
 
@@ -142,15 +206,16 @@ In practical terms, the project can now:
 - prepare structured market-state outputs for downstream strategy layers
 - produce controlled decision-layer outputs on top of governed descriptive truth
 - define controlled execution-layer meaning on top of governed decision truth
-- provide a strong engineering base for risk, portfolio, evaluation, and go-live work in the next major stages
+- define capital-aware Risk / Portfolio foundation semantics on top of governed execution truth
+- provide a strong engineering base for evaluation, go-live governance, and later controlled live-readiness work
 
 ---
 
-## What the Platform Can Do After EPIC 3
+## What the Platform Can Do After EPIC 4
 
-At this stage, the platform is no longer only a data or decision foundation.
+At this stage, the platform is no longer only a data, decision, or execution foundation.
 
-It can now function as a **serious descriptive, decision, and execution-layer foundation**.
+It can now function as a **serious descriptive, decision, execution, and Risk / Portfolio foundation**.
 
 That means it can already support:
 
@@ -162,24 +227,30 @@ That means it can already support:
 - controlled execution-layer semantics after accepted decision outputs
 - order / fill / execution-outcome interpretation
 - bounded simulated execution posture and execution-facing runtime/reporting outputs
+- canonical Risk / Portfolio ownership boundaries
+- sizing, exposure, portfolio-state, valuation, and PnL foundation semantics
+- bounded accounting-boundary posture
+- explicit deferred ownership for accounting, settlement, reconciliation, productization, live-provider operations, and go-live authorization
+- machine-checkable readiness for downstream evaluation/governance consumption
 - audit-friendly and review-friendly engineering workflows
-- future expansion without reopening the upstream foundation
+- future expansion without reopening the upstream foundations
 
-This is a major milestone because many system failures happen when projects try to build execution or capital logic on top of weak descriptive or decision foundations.  
-Those upstream layers are now closed through EPIC 3.
+This is a major milestone because many system failures happen when projects try to build evaluation or live-capital logic on top of weak descriptive, decision, execution, or risk foundations.  
+Those upstream and Risk / Portfolio layers are now closed through EPIC 4.
 
 ---
 
 ## What Has Not Been Closed Yet
 
-Even after EPIC 3, the project is **not** yet a live-capital-authorized trading product.
+Even after EPIC 4, the project is **not** yet a live-capital-authorized trading product.
 
 The following are intentionally still outside the closed scope:
 
 - full live-trading implementation
-- full risk and portfolio ownership
-- settlement / bookkeeping / accounting ownership
 - evaluation and go-live judgment ownership
+- final go-live approval criteria
+- settlement / bookkeeping / accounting ownership
+- broker or external-account reconciliation
 - production operator tooling
 - broader platform/product concerns
 
@@ -189,23 +260,29 @@ The project is being built in the following order:
 
 **foundation → decisions → execution → risk/control → evaluation → productization**
 
+Risk / Portfolio readiness is not go-live authorization.
+
 ---
 
 ## What Comes Next
 
-The next major stage is expected to introduce the **Risk & Portfolio Layer**.
+The next major stage is expected to introduce the **Evaluation & Go-Live Gate**.
 
 That is where the platform is expected to begin defining:
 
-- portfolio ownership
-- risk-layer consumption of execution truth
-- capital protection semantics
-- downstream execution-to-portfolio interpretation boundaries
+- end-to-end validation
+- deterministic backtest validation
+- paper-trading validation
+- evaluation evidence
+- performance and risk acceptance criteria
+- go-live checklist and approval boundary
+- final pre-live gate criteria
 
 After that, later work is expected to introduce:
 
-- evaluation and go-live gates
+- controlled live-readiness work
 - broader operational controls
+- capital scaling after evidence
 - larger platform/product capabilities
 
 ---
@@ -219,45 +296,11 @@ When the broader Phase 1 program is finished, the project is expected to support
 - controlled execution infrastructure
 - capital/risk protection layers
 - evaluation and deployment readiness checks
+- explicit go-live approval gates
 
-So EPIC 1, EPIC 2, and EPIC 3 should be understood as:
+So EPIC 1, EPIC 2, EPIC 3, and EPIC 4 should be understood as:
 
-**the completed upstream and execution foundation of the core trading program, not the final finished product.**
-
----
-
-## Project Scale Snapshot
-
-Based on the latest verified repository snapshot after EPIC 3 closeout:
-
-### Repository size
-
-- **Total unique files tracked by cloc:** 892
-- **Total lines tracked by cloc:** 137,507
-
-### Language footprint
-
-- **Python:** 109,156 lines
-- **Markdown:** 24,676 lines
-- **JSON:** 3,076 lines
-- plus smaller amounts of PowerShell, text, TOML, and YAML
-
-### Approximate composition
-
-- **Python share of the codebase:** ~79.4%
-- **Markdown/documentation share:** ~17.9%
-
-This shows that the project is already a large engineering codebase, with substantial investment in both implementation and governance/documentation.
-
----
-
-## Quality Snapshot
-
-Latest full verified test run after EPIC 3 closeout:
-
-- **1669 tests passed**
-
-This matters because the project is not only growing in size; it is being developed with a strong emphasis on **verification, regression safety, and controlled evolution**.
+**the completed descriptive, decision, execution, and Risk / Portfolio foundation of the core trading program, not the final live-authorized product.**
 
 ---
 
@@ -338,9 +381,10 @@ This project is an engineering and research initiative.
 
 It does not provide financial advice or trading signals.
 
+Risk / Portfolio readiness is not go-live authorization.
+
 ---
 
 ## In One Sentence
 
-**AutoTrade Core is a private, large-scale software project building a deterministic, contract-driven, and scalable trading infrastructure — and EPIC 1 through EPIC 3 now close the descriptive, decision, and execution foundation that later risk and evaluation layers will build on.**
-
+**AutoTrade Core is a private, large-scale software project building a deterministic, contract-driven, and scalable trading infrastructure — and EPIC 1 through EPIC 4 now close the descriptive, decision, execution, and Risk / Portfolio foundation that the final evaluation and go-live layer will build on.**
