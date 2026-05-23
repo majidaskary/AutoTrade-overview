@@ -93,11 +93,11 @@ This means the project now has a closed and working:
 ```text
 Phase 1 — Core Trading Program ...................  ~70%  ██████████████░░░░░░
 
-EPIC 1 — Descriptive / Intelligence Foundation ...  100%  ████████████████████    ~25% 25
-EPIC 2 — Decision / Strategy Foundation ..........  100%  ████████████████████    ~25% 25
+EPIC 1 — Descriptive / Intelligence Foundation ...  100%  ████████████████████    ~25% 30
+EPIC 2 — Decision / Strategy Foundation ..........  100%  ████████████████████    ~25% 15
 EPIC 3 — Execution Layer .........................  100%  ████████████████████    ~10% 10
 EPIC 4 — Risk & Portfolio Layer ..................  100%  ████████████████████    ~10% 10
-EPIC 5 — Evaluation & Go-Live Gate ...............    0%  ░░░░░░░░░░░░░░░░░░░░    ~10% 25
+EPIC 5 — Evaluation & Go-Live Gate ...............    0%  ░░░░░░░░░░░░░░░░░░░░    ~10% 30
 EPIC F — Flow Layer ..............................    0%  ░░░░░░░░░░░░░░░░░░░░    ~10% 0
 EPIC H — Historical Data Layer ...................    0%  ░░░░░░░░░░░░░░░░░░░░    ~10% 5
 ```
