@@ -123,9 +123,9 @@ Based on the latest verified repository snapshot after EPIC 4 closeout:
 
 ### Repository size
 
-- **Total text files tracked by cloc:**  2019
-- **Total unique files tracked by cloc:**  2015
-- **Total lines tracked by cloc:**  421,213
+- **Total text files tracked by cloc:**  2049
+- **Total unique files tracked by cloc:**  2045
+- **Total lines tracked by cloc:**  430,860
 
 ### Language footprint
 
@@ -133,7 +133,7 @@ Based on the latest verified repository snapshot after EPIC 4 closeout:
 ---------------------------------------
 Language           files           code
 ---------------------------------------
-Python              1720         362177
+Python              1750         371824
 Markdown             257          55182
 JSON                  28           3076
 Text                   5            485
@@ -141,7 +141,7 @@ PowerShell             3            204
 TOML                   1             61
 YAML                   1             28
 ---------------------------------------
-SUM:                 2015        421213
+SUM:                 2045        430860
 ```
 
 ### Approximate composition
