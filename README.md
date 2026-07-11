@@ -92,23 +92,23 @@ This means the project now has a closed and working:
 ### Progress snapshot
 
 ```text
-Phase 1 — Core Trading Program ...................  ~85%  ████████████████░░░░
+Phase 1 — Core Trading Program ...................  ~85%  ████████████████
 
 EPIC 1 — Descriptive / Intelligence Foundation ...  100%  ████████████████████    ~30%
 EPIC 2 — Decision / Strategy Foundation ..........  100%  ████████████████████    ~15%
 EPIC 3 — Execution Layer .........................  100%  ████████████████████    ~10%
 EPIC 4 — Risk & Portfolio Layer ..................  100%  ████████████████████    ~10%
-EPIC 5 — Evaluation & Go-Live Gate ...............   60%  ███████████░░░░░░░░░    ~30%
-EPIC H — Historical Data Layer ...................    0%  ░░░░░░░░░░░░░░░░░░░░     ~5%
+EPIC 5 — Evaluation & Go-Live Gate ...............   60%  ███████████             ~30%
+EPIC H — Historical Data Layer ...................    0%                           ~5%
 ```
 
-```text
-AutoTrade Project ................................  ~20%  ████░░░░░░░░░░░░░░░░
+```text 
+AutoTrade Project ................................  ~20%  ████    
 
-PHASE 1 — Core Trading Program ...................  ~85%  ████████████████░░░░    ~25%
-PHASE 2 — Stabilization & Capital Scaling ........    0%  ░░░░░░░░░░░░░░░░░░░░    ~25%
-PHASE 3 — Advanced Profit Engines ................    0%  ░░░░░░░░░░░░░░░░░░░░    ~25%
-PHASE 4 — Platformization & Expansion ............    0%  ░░░░░░░░░░░░░░░░░░░░    ~25%
+PHASE 1 — Core Trading Program ...................  ~85%  ████████████████        ~25%
+PHASE 2 — Stabilization & Capital Scaling ........    0%                          ~25%
+PHASE 3 — Advanced Profit Engines ................    0%                          ~25%
+PHASE 4 — Platformization & Expansion ............    0%                          ~25%
 ```
 
 Important note:
@@ -123,9 +123,9 @@ Based on the latest verified repository snapshot after EPIC 4 closeout:
 
 ### Repository size
 
-- **Total text files tracked by cloc:** 2019
-- **Total unique files tracked by cloc:** 2015
-- **Total lines tracked by cloc:** 421,213
+- **Total text files tracked by cloc:**  2019
+- **Total unique files tracked by cloc:**  2015
+- **Total lines tracked by cloc:**  421,213
 
 ### Language footprint
 
