@@ -85,26 +85,27 @@ This means the project now has a closed and working:
 - **EPIC 2 completion:** 100%
 - **EPIC 3 completion:** 100%
 - **EPIC 4 completion:** 100%
-- **Phase 1 progress by major epic count:** ~70%
-- **Next step:** define and execute **EPIC 5 — Evaluation & Go-Live Gate**
+- **EPIC 5 completion:**  60%
+- **Phase 1 progress by major epic count:** ~85%
+- **Current step:** define and execute **EPIC 5 — Evaluation & Go-Live Gate**
 
 ### Progress snapshot
 
 ```text
-Phase 1 — Core Trading Program ...................  ~70%  ██████████████░░░░░░
+Phase 1 — Core Trading Program ...................  ~85%  ████████████████░░░░
 
 EPIC 1 — Descriptive / Intelligence Foundation ...  100%  ████████████████████    ~30%
-EPIC 2 — Decision / Strategy Foundation ..........  100%  ████████████████████    ~20%
+EPIC 2 — Decision / Strategy Foundation ..........  100%  ████████████████████    ~15%
 EPIC 3 — Execution Layer .........................  100%  ████████████████████    ~10%
 EPIC 4 — Risk & Portfolio Layer ..................  100%  ████████████████████    ~10%
-EPIC 5 — Evaluation & Go-Live Gate ...............    0%  ░░░░░░░░░░░░░░░░░░░░    ~25%
+EPIC 5 — Evaluation & Go-Live Gate ...............   60%  ███████████░░░░░░░░░    ~30%
 EPIC H — Historical Data Layer ...................    0%  ░░░░░░░░░░░░░░░░░░░░     ~5%
 ```
 
 ```text
-AutoTrade Project ................................  ~18%  ████░░░░░░░░░░░░░░░░
+AutoTrade Project ................................  ~20%  ████░░░░░░░░░░░░░░░░
 
-PHASE 1 — Core Trading Program ...................  ~70%  ██████████████░░░░░░    ~25%
+PHASE 1 — Core Trading Program ...................  ~85%  ████████████████░░░░    ~25%
 PHASE 2 — Stabilization & Capital Scaling ........    0%  ░░░░░░░░░░░░░░░░░░░░    ~25%
 PHASE 3 — Advanced Profit Engines ................    0%  ░░░░░░░░░░░░░░░░░░░░    ~25%
 PHASE 4 — Platformization & Expansion ............    0%  ░░░░░░░░░░░░░░░░░░░░    ~25%
@@ -122,9 +123,9 @@ Based on the latest verified repository snapshot after EPIC 4 closeout:
 
 ### Repository size
 
-- **Total text files tracked by cloc:** 972
-- **Total unique files tracked by cloc:** 968
-- **Total lines tracked by cloc:** 178,690
+- **Total text files tracked by cloc:** 2019
+- **Total unique files tracked by cloc:** 2015
+- **Total lines tracked by cloc:** 421,213
 
 ### Language footprint
 
@@ -132,15 +133,15 @@ Based on the latest verified repository snapshot after EPIC 4 closeout:
 ---------------------------------------
 Language           files           code
 ---------------------------------------
-Python               817         143972
-Markdown             113          31043
+Python              1720         362177
+Markdown             257          55182
 JSON                  28           3076
-Text                   5            306
+Text                   5            485
 PowerShell             3            204
 TOML                   1             61
 YAML                   1             28
 ---------------------------------------
-SUM:                 968         178690
+SUM:                 2015        421213
 ```
 
 ### Approximate composition
